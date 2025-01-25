@@ -118,7 +118,8 @@ public class PlayerGrab : MonoBehaviour
                 returnComplete = false;
                 originTransform = objInHand.transform.position;
                 originGameobject = objInHand;
-                SmoothOut();
+                yield return new WaitForSeconds(0.1f);
+                StartCoroutine(SmoothOut());
             }
             change = false;
         }

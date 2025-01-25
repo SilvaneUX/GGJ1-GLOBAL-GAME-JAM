@@ -12,13 +12,13 @@ public class Item : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerGrab.Instance.change)
+        if (!PlayerGrab.Instance.change || PlayerGrab.Instance.objInHand.gameObject == this.gameObject)
         {
-            GetComponent<Collider2D>().enabled = false;
+            GetComponent<Collider2D>().enabled = true;
         }
         else
         {
-            GetComponent<Collider2D>().enabled = true;
+            GetComponent<Collider2D>().enabled = false;
         }
     }
 
