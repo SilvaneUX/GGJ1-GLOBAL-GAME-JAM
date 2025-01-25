@@ -119,28 +119,8 @@ public class PlayerGrab : MonoBehaviour
         }
         else if (change && (objectGrab.position.x < objInHand.transform.position.x))
         {
-<<<<<<< Updated upstream
-            timeSmooth = 0;
-            hits = false;
-            isTouching = false;
-            isComplete = true;
-            if (change)
-            {
-                playerHand.eulerAngles = new Vector3(0, 0, 0);
-
-                isComplete = false;
-                change = false;
-                returnComplete = false;
-                originTransform = objInHand.transform.position;
-                originGameobject = objInHand;
-                SmoothOut();
-            }
-            change = false;
-=======
             ItsClose();
-            Debug.Log(checkDistance.position.x);
-            Debug.Log(objInHand.transform.position.x);
->>>>>>> Stashed changes
+     
         }
         else if (change)
         {

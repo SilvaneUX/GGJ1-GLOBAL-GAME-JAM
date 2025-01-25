@@ -19,15 +19,8 @@ public class Item : MonoBehaviour
     void Update()
     {
         if (PlayerGrab.Instance.change)
-<<<<<<< Updated upstream
         {
             GetComponent<Collider2D>().enabled = false;
-        }
-        else
-=======
->>>>>>> Stashed changes
-        {
-            GetComponent<Collider2D>().enabled = true;
         }
         else
         {
