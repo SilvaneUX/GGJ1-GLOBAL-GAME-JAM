@@ -7,6 +7,8 @@ public class ManagerObjective : MonoBehaviour
 {
     [SerializeField] Image[] img;
     [SerializeField] TextMeshProUGUI[] percent;
+
+    public static int[] Bottles;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,6 +31,7 @@ public class ManagerObjective : MonoBehaviour
             percent[i].enabled = false;
         }
         int RandomBottle = Random.Range(2, 5);
+        Bottles = new int[RandomBottle];
         int val = 0;
         for(int i = 0; i < RandomBottle; i++)
         {
@@ -37,14 +40,18 @@ public class ManagerObjective : MonoBehaviour
             int rnd = Random.Range(1, 100-val);
             if(i != RandomBottle-1)
             {
-                Debug.Log("pass");
+                // Debug.Log("pass");
                 val += rnd;
                 percent[i].text = rnd.ToString();
+                // save to each correspondent bottle
+                Bottles[i] = rnd;
             }else if(i == RandomBottle-1)
             {
                 rnd = 100 - val;
-                Debug.Log(rnd);
+                // Debug.Log(rnd);
                 percent[i].text = rnd.ToString();
+                // save to last bottle
+                Bottles[i] = rnd;
             }
             img[i].color = Color.white;
         }
