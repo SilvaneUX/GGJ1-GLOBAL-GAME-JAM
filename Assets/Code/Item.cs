@@ -12,6 +12,7 @@ public class Item : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        water = GetComponentInChildren<Water>().gameObject;
         waterBool = false;
     }
 
@@ -51,7 +52,11 @@ public class Item : MonoBehaviour
 
     void SpawnWater()
     {
-        water.SetActive(true);
+        if (water)
+        {
+            water.SetActive(true);
+        }
+        
     }
 
     void DeleteWater()

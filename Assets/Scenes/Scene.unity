@@ -531,8 +531,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pick: 0
-  water: {fileID: 323650692}
-  waterPos: {fileID: 323650693}
+  water: {fileID: 0}
+  waterPos: {fileID: 0}
   waterOn: 0
   waterBool: 0
 --- !u!212 &122100572
@@ -1237,7 +1237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &323650693
 Transform:
   m_ObjectHideFlags: 0
@@ -1554,7 +1554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &413424718
 Transform:
   m_ObjectHideFlags: 0
@@ -3248,7 +3248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1106518906
 Transform:
   m_ObjectHideFlags: 0
@@ -3346,8 +3346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pick: 0
-  water: {fileID: 1135345113}
-  waterPos: {fileID: 1135345114}
+  water: {fileID: 0}
+  waterPos: {fileID: 0}
   waterOn: 0
   waterBool: 0
 --- !u!212 &1134141537
@@ -3438,7 +3438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1135345114
 Transform:
   m_ObjectHideFlags: 0
@@ -3536,8 +3536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pick: 0
-  water: {fileID: 413424717}
-  waterPos: {fileID: 413424718}
+  water: {fileID: 0}
+  waterPos: {fileID: 0}
   waterOn: 0
   waterBool: 0
 --- !u!212 &1224854015
@@ -4414,7 +4414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1611542139
 Transform:
   m_ObjectHideFlags: 0
@@ -4512,8 +4512,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pick: 0
-  water: {fileID: 1611542138}
-  waterPos: {fileID: 1611542139}
+  water: {fileID: 0}
+  waterPos: {fileID: 0}
   waterOn: 0
   waterBool: 0
 --- !u!212 &1641218424
@@ -4934,7 +4934,7 @@ MonoBehaviour:
   pointer: {fileID: 12624796}
   playerHandModel: {fileID: 458387629}
   objectGrab: {fileID: 1571953041}
-  checkDistance: {fileID: 1766975670}
+  checkDistance: {fileID: 0}
   objInHand: {fileID: 0}
   timeSmooth: 0
   originTransform: {x: 0, y: 0, z: 0}
@@ -5012,8 +5012,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pick: 0
-  water: {fileID: 2051976878}
-  waterPos: {fileID: 2051976879}
+  water: {fileID: 0}
+  waterPos: {fileID: 0}
   waterOn: 0
   waterBool: 0
 --- !u!212 &1834097088
@@ -5479,7 +5479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2051976879
 Transform:
   m_ObjectHideFlags: 0

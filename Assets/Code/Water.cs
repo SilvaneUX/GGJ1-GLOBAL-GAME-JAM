@@ -25,7 +25,11 @@ public class Water : MonoBehaviour
 
         if (!PlayerGrab.Instance.pour)
         {
-            StopCoroutine(coroutine);
+            if (coroutine != null)
+            {
+                StopCoroutine(coroutine);
+            }
+            
             coroutine = null;
             transform.localScale = originScale;
         }
