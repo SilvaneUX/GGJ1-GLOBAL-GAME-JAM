@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Hand
   - Item
+  - Cup
+  - Hand2
   layers:
   - Default
   - TransparentFX
